@@ -1,0 +1,2786 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   /* border: 1px solid red; */
+}
+
+
+/* home section of the website */
+
+/* 1st section */
+
+.navigation-head{
+   /* border: 1px solid red; */
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background-color: rgba(234, 234, 241, 0.97);
+   z-index: 1000;
+   position: sticky;
+   top: 0;
+   /* box-shadow: 2px 2px 10px 2px rgb(194, 193, 193); */
+}
+
+.logo{
+   border-bottom: 5px solid rgb(236, 105, 105);
+   text-align: center;
+   padding: 0.2rem 1rem;
+}
+
+.logo > p{
+   color: rgb(114, 3, 3);
+   font-weight: 800;
+}
+
+.social-media{
+   /* border: 1px solid rebeccapurple; */
+   padding: 1rem 1rem;
+   align-items: center;
+}
+
+.social-media > a{
+   padding: 0.2rem 1rem;
+   font-size: 19px;
+   font-weight: 900;
+   color: rgb(114, 3, 3);
+}
+
+.nav-links{
+   display: flex;
+}
+
+.nav-links li{
+   /* border: 1px solid rebeccapurple; */
+   display: inline-block;
+   padding: 1rem 1rem ;
+}
+
+ul.links > li a {
+   text-transform: uppercase;
+   text-decoration: none;
+   font-size: 15px;
+   color: rgb(226, 27, 27);
+   font-weight: 700;
+   transition: ease 0.2s;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul.links > li > a:hover{
+   color: rgb(114, 3, 3);
+}
+
+ul.links > li a::after{
+  content: '';
+   width: 0%;
+   height: 2px;
+   background: rgb(114, 3, 3);
+   display: block;
+   margin: auto;
+   transition: ease 0.2s;
+}
+
+ul.links > li a:hover::after{
+   width: 100%;
+}
+
+.toggle{
+   display: none;
+}
+
+.hoverable{
+   position: relative;
+}
+
+.dropdown{
+   display: none;
+  position: absolute;
+  top: 10;
+  left: 0;
+  background-color: rgba(234, 234, 241, 0.3);
+  padding: 0.4rem 1rem;
+  transition: ease 0.8s;
+}
+
+.hoverable:hover{
+   padding: 0 1rem;
+}
+
+.hoverable:hover .dropdown {
+   display: block;
+ }
+
+.navigation-body{
+   background-image:  linear-gradient(to bottom, rgba(17,16,22,0.2), rgba(17,16,22,0.8)), url('https://www.freshpalace.com/wp-content/uploads/2013/04/Home-Buenos-Aires-Entrance-Garage-Driveway.jpg');
+   height: 100vh;
+   width: 100%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   position: relative;
+}
+
+.navigation-body > div{
+   position: absolute;
+   top: 30%;
+   left: 50%;
+   transform: translate(-50%);
+   text-align: center;
+}
+
+.navigation-body > div > h1{
+   font-size: 85px;
+   word-spacing: 1.5px;
+   padding: 1rem 1rem;
+   color: white;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.navigation-body > div > h3{
+   color: rgba(234, 234, 241, 0.8);
+   font-size: 20px;
+   word-spacing: 10px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.explore{
+   display: flex;
+   justify-content: center;
+   margin-top: 4.3rem;
+}
+
+.explore > p > a{
+   background-color: rgb(226, 27, 27);
+   padding: 0.8rem 2.8rem;
+   text-transform: uppercase;
+   color: white;
+   margin-top: 6rem; 
+   transition: ease 0.2s;
+   border-radius: 5px;
+   text-decoration: none;
+   font-weight: 600;
+   font-family: 'Courier New', Courier, monospace;
+}
+
+.explore > p > a:hover{
+   background-color: rgb(231, 73, 73);
+   cursor: pointer;
+}
+
+
+/* 2nd section */
+#second-section{
+   margin-top: 4rem; 
+}
+
+#second-section > div{
+   text-align: center;
+   padding: 1rem 0;
+}
+
+#second-section > div >h3{
+   color: #444;
+   font-size: 22px;
+   word-spacing: 10px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   padding: 1rem 1rem;
+   text-transform: uppercase;
+   font-weight: 400;
+}
+
+.second-section-img{
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: center;
+}
+
+.second-img{
+   position: relative;
+   width:47%;
+}
+
+.second-img > img{
+   width: 100%;
+}
+
+.second-img-buy{
+   background-color: rgba(17, 17, 59, 0.6);
+   position: absolute;
+   top: 0;
+   width: 635px;
+   height: 99%;
+}
+
+.second-img-buy > h2 > a{
+   position: absolute;
+   top: 40%;
+   left: 50%;
+   transform: translate(-50%);
+   font-size: 70px;
+   text-transform: uppercase;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: white;
+   text-decoration: none;
+}
+
+.second-img-buy > h2 > a:hover{
+   transition: ease 0.7s;
+   color: red;
+}
+
+.second-img-buy2{
+   background-color: rgba(241, 50, 50, 0.6);
+   position: absolute;
+   top: 0;
+   width: 635px;
+   height: 99%;
+}
+
+.second-img-buy2 > h2 > a{
+   position: absolute;
+   top: 40%;
+   left: 50%;
+   transform: translate(-50%);
+   font-size: 70px;
+   text-transform: uppercase;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: white;
+   text-decoration: none;
+}
+
+.second-img-buy2 > h2 > a:hover{
+   transition: ease 0.7s;
+   color: red;
+}
+
+
+/* 3rd section */
+#third-section{
+   /* border: 1px solid red; */
+   margin-top: 4rem;
+   text-align: center;
+
+}
+
+#third-section h3{
+   color: #444;
+   font-size: 22px;
+   word-spacing: 10px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   padding: 1rem 1rem;
+   text-transform: uppercase;
+   font-weight: 400;
+}
+
+#third-section  h1{
+   font-size: 30px;
+   word-spacing: 1.5px;
+   padding: 1rem 1rem;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   text-transform: uppercase;
+}
+
+.overall{
+   /* border: 1px solid rebeccapurple; */
+   height: auto;
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: space-around;
+   justify-items: center;
+   padding: 5rem 14rem;
+   align-items: center;
+}
+
+.overall-div{
+   /* border: 1px solid yellow; */
+   width: 43%;
+   box-shadow: 1px 2px 7px 2px #e4e0e0, -1px -1px 7px 2px #e4e0e0;
+}
+
+.overall-image{
+   /* border: 1px solid red; */
+   width: 100%;
+   position: relative;
+}
+
+.overall-image  img{
+   display: block;
+   width: 100%;
+   height: 300px;
+}
+
+.overall-image > p{
+   background-color: rgb(226, 0, 0);
+   width: fit-content;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   text-align: center;
+   font-size: 22px;
+   justify-content: center;
+   color: white;
+   padding: 0.3rem 1rem;
+   padding-top: 0.6rem;
+   text-transform: uppercase;
+}
+
+.overall-text{
+   /* border: 1px solid red; */
+   width: 100%;
+   text-align: left;
+}
+
+hr{
+   height: 2px;
+   width: 90%;
+   margin: 0 1rem;
+   background-color: rgb(247, 238, 238);
+   border: none;
+}
+
+.overall-text > p{
+   padding: 0.3rem 1rem;
+}
+
+.overall-text > p > a{
+   /* border: 1px solid rebeccapurple; */
+   text-decoration: none;
+   color: #444;
+}
+
+.overall-text > p > a:hover{
+   transition: ease 0.4s;
+   color: red;
+}
+
+.overall-text > .p1{
+   font-size: 30px;
+   font-weight: 600;
+}
+
+.overall-text > .p3{
+   font-size: 20px;
+   font-weight: 200;
+}
+
+.overall-style{
+   display: flex;
+   flex-wrap: nowrap;
+   width: 100%;
+   justify-content: space-between;
+   padding: 0.1rem 1rem;
+}
+
+.overall-style-text > i{
+   font-size: 27px;
+   color: rgb(219, 219, 223);
+   padding: 0.8rem 0;
+}
+
+.overall-style-text > i.fa-thin{
+   font-size: 45px;
+   color: rgb(205, 205, 214);
+}
+
+.overall-style-text > p{
+   font-size: 18px;
+   text-transform: capitalize;
+   font-weight: 700;
+}
+
+p.beds{
+   font-size: 15px;
+   font-weight: 100;
+}
+
+#hr{
+   margin-top: 6rem;
+   /* border: 1px solid red; */
+   display: block;
+   padding: 0 4rem;
+}
+
+#hr > hr{
+   width: 100%;
+   background-color: rgb(197, 201, 252); 
+}
+
+
+/* stories-section */
+#stories{
+   margin-top: 6rem;
+   text-align: center;
+   height: 137vh;
+}
+
+#stories > h3{
+   color: #444;
+   font-size: 22px;
+   word-spacing: 10px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   padding: 1rem 1rem;
+   text-transform: uppercase;
+   font-weight: 400;
+   margin-bottom: 5rem;
+}
+
+.stories{
+   display: block;
+   position: relative;
+}
+
+.stories-text{
+   display: flex;
+   justify-content: center;
+}
+
+.stories-text > div{
+   background-color: rgb(9,29,53);
+   height: 50vh;
+   width: 78%;
+   position: relative;
+   z-index: 10;
+}
+
+.stories-text > div > i{
+   color: white;
+   font-size: 20px;
+}
+
+.stories-text > div > i#first-icon{
+   position: absolute;
+   left: 100px;
+   bottom: 50%;
+}
+
+.stories-text > div > i#second-icon{
+   position: absolute;
+   right: 100px;
+   bottom: 50%;
+}
+
+.stories-text > div > div{
+   padding: 6rem 15rem;
+   word-spacing: 1px;
+}
+
+.stories-text > div > div > p{
+   color: white;
+   font-size: 21px;
+}
+
+.stories-text > div > div > h3{
+   color: rgb(230, 64, 64);
+   font-size: 23px;
+   font-weight: 900;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.stories-img{
+   height: 80vh;
+   position: absolute;
+   width: 100%;
+   top: 250px;
+   background-image: url('https://maricamckeel.com/wp-content/uploads/2017/11/06a_East-House.jpeg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+
+
+/* welcome section */
+#welcome{
+   background-color:rgb(228,236,242);
+   text-align: center;
+   padding: 6rem 6rem;
+   height: 80vh;
+}
+
+#welcome > h3{
+   color: #444;
+   font-size: 22px;
+   word-spacing: 10px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   padding: 1rem 1rem;
+   text-transform: uppercase;
+   font-weight: 200;
+}
+
+.welcome{
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: space-around;
+   padding: 4rem 0;
+}
+
+.welcome-div{
+   display: block;
+   padding: 1rem 1rem;
+}
+
+.welcome-div > i{
+   font-size: 50px;
+   color: rgb(179, 20, 20);
+   padding: 0.3rem 0.3rem;
+}
+
+.welcome-div > h2{
+   font-size: 25px;
+   font-weight: 700;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: #222;
+   text-transform: capitalize;
+   padding: 1rem 0.3rem;
+}
+
+.welcome-div > p{
+   font-size: 20px;
+   text-transform: capitalize;
+   padding: 0.3rem 0;
+   font-weight: 200;
+   color: #444;
+}
+
+.welcome-div > p.first-p{
+   font-weight: 200;
+}
+
+.welcome-div > p.first-p > a{
+   text-decoration: none;
+   color: #444;
+}
+
+
+/* contact section */
+#contact{
+   background-color:rgb(29,45,66);
+   height: auto;
+   padding-bottom: 2rem;
+}
+
+.contact{
+   height: inherit;
+   display: flex;
+   flex-wrap: nowrap;
+}
+
+.contact-div1{
+   /* border: 1px solid red; */
+   width: 45%;
+   padding: 0 5rem;
+}
+
+.contact-div1 > h3{
+   font-size: 27px;
+   font-weight: 100;
+   color: white;
+   text-transform: capitalize;
+   padding: 4rem 0;
+   font-family: 'Courier New', Courier, monospace;
+}
+
+.contact-div1 > p{
+   color: white;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 20px;
+   padding: 1rem 0;
+   padding-right: 6rem;
+}
+
+.contact-div2{
+   width: 55%;
+   /* border: 1px solid red; */
+}
+
+.contact-div2 h3{
+   font-size: 27px;
+   font-weight: 100;
+   color: white;
+   text-transform: capitalize;
+   padding: 4rem 0;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.contact-div2 form{
+   border: 1px solid transparent;
+}
+
+.contact-div2 form > div.second-div{
+   display: flex;
+   padding: 1rem 0;
+}
+
+.contact-div2 form > div.first-div{
+   padding: 1rem 0;
+}
+
+.contact-div2 form > div.first-div > p{
+   color: white;
+   font-size: 20px;
+   text-transform: capitalize;
+}
+
+.first-div > p > label{
+   padding-right: 3rem;
+}
+
+.last-name{
+   padding: 1rem 3rem;
+}
+
+.first-name{
+   padding: 1rem 0;
+}
+
+label{
+   color: white;
+   font-size: 18px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input[type = "text"]{
+   padding: 0.7rem 2rem;
+   background-color: transparent;
+   border: 1px solid transparent;
+   border-bottom: 2px solid white;
+}
+
+input[type = "email"]{
+   padding: 0.7rem 2rem;
+   width: 72%;
+   background-color: transparent;
+   border: 1px solid transparent;
+   border-bottom: 2px solid white;
+}
+
+input[type = "radio"]{
+   background-color: black;
+}
+
+textarea{
+   padding: 0.1rem 2rem;
+   width: 72%;
+   background-color: transparent;
+   border: 1px solid transparent;
+   border-bottom: 2px solid white;
+}
+
+input[type = "submit"]{
+   border: transparent;
+   margin-top: 0.5rem;
+   padding: 0.7rem 1rem;
+   background-color: rgb(226, 27, 27);
+   text-transform: uppercase;
+   color: white;
+   transition: ease 0.2s;
+   font-weight: 600;
+   font-family: 'Courier New', Courier, monospace;
+}
+
+input[type = "submit"]:hover{
+   background-color: rgb(231, 73, 73);
+   cursor: pointer;
+}
+
+
+/* footer section */
+#footer{
+   background-color: rgb(9,29,53);
+   height: auto;
+}
+
+.footer{
+   height: auto;
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: space-around;
+}
+
+.footer > div{
+   padding-top: 4rem;
+}
+
+.footer > div > div{
+   padding: 1rem 1rem;
+   margin-bottom: 5rem;
+}
+
+.footer > div > div > p{
+   color: rgb(114, 3, 3);
+   font-weight: 800;
+}
+
+.footer > div > p.copy{
+   color: white;
+   font-weight: 600;
+   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   padding: 1rem 1rem;
+}
+
+.footer > div > p.copy > a{
+   color: rgb(114, 3, 3);
+   text-transform: uppercase;
+   text-decoration: none;
+   font-size: 18px;
+}
+
+.footer > div > ul{
+   display: block;
+}
+
+.footer > div li{
+   display: block;
+   padding: 1rem 1rem;
+}
+
+.footer > div li > a{
+   color: white;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-weight: 700;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 13px;
+}
+
+.footer-special > p{
+   color: white;
+   padding: 1rem 0;
+}
+
+.footer-special > p > a{
+   color: white;
+   text-decoration: none;
+   font-size: 18px;
+}
+
+.footer-special > div{
+   margin-top: 6rem;
+}
+
+.footer-special > div >a{
+   color: white;
+}
+
+.footer-special > div > a > i{
+   padding-right: 0.3rem;
+}
+
+
+/* properties section of the website */
+.properties{
+   height: 30vh;
+   position: relative;
+   text-align: center;
+   background-image:linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(14,30,49,0.9) 0%), url('https://www.southernhomemagazine.com/wp-content/uploads/2020/07/y4.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: bottom;
+}
+
+.properties > div{
+   position: absolute;
+   top: 20%;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.properties > div > h3{
+   padding: 1rem 0;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: 100;
+   font-size: 20px;
+   text-transform: uppercase;
+   color: white;
+   word-spacing: 3px;
+}
+
+.properties > div > h1{
+   padding: 1rem 0;
+   color: white;
+   font-size: 35px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   line-height: 20px;
+   font-weight: 600;
+}
+
+
+/* buy properties */
+.properties-buy{
+   height: 30vh;
+   position: relative;
+   text-align: center;
+   background-image:linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(14,30,49,0.9) 0%), url('https://www.lmbinteriors.com/wp-content/uploads/2017/01/Poolhouse-7637-2.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.properties-buy > div{
+   position: absolute;
+   top: 20%;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.properties-buy > div > h3{
+   padding: 1rem 0;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: 100;
+   font-size: 20px;
+   text-transform: uppercase;
+   color: white;
+   word-spacing: 3px;
+}
+
+.properties-buy > div > h1{
+   padding: 1rem 0;
+   color: white;
+   font-size: 35px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   line-height: 20px;
+   font-weight: 600;
+}
+
+
+/* rent properties */
+.properties-rent{
+   height: 30vh;
+   position: relative;
+   text-align: center;
+   background-image: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(14,30,49,0.9) 0%), url('https://www.thespruce.com/thmb/QF3CQ_hqa5dpHmtmv29nKlczL6I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/8MarkLangos_CodyRoad_OutsideToInterior_C-57d12c89819242e9a46afba804e0d5bd.jpeg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.properties-rent > div{
+   position: absolute;
+   top: 20%;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.properties-rent > div > h3{
+   padding: 1rem 0;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: 100;
+   font-size: 20px;
+   text-transform: uppercase;
+   color: white;
+   word-spacing: 3px;
+}
+
+.properties-rent > div > h1{
+   padding: 1rem 0;
+   color: white;
+   font-size: 35px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   line-height: 20px;
+   font-weight: 600;
+}
+
+
+/* News section */
+.properties-news{ 
+   height: 30vh;
+   position: relative;
+   text-align: center;
+   background-image: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(14,30,49,0.9) 0%), url('https://images.unsplash.com/photo-1524813686514-a57563d77965?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.properties-news > div{
+   position: absolute;
+   top: 20%;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.properties-news > div > h3{
+   padding: 1rem 0;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: 100;
+   font-size: 20px;
+   text-transform: uppercase;
+   color: white;
+   word-spacing: 3px;
+   letter-spacing: 3px;
+}
+
+.properties-news > div > h1{
+   padding: 1rem 0;
+   color: white;
+   font-size: 35px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   line-height: 20px;
+   font-weight: 600;
+   text-transform: uppercase;
+}
+
+#news{
+   height: auto;
+   margin-top: 3rem;
+   margin-bottom: 9rem;
+   /* border: 1px solid red; */
+}
+
+.news{
+   /* border: 1px solid red; */
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   padding: 2rem 22rem;
+   margin-bottom: 2rem;
+}
+
+.news-section{
+   /* border: 1px solid yellowgreen; */
+   text-align: left;
+   box-shadow: 1px 2px 7px 2px #f1efef, -1px -1px 7px 2px #f1efef;
+}
+
+.news-section > div{
+   padding: 0.3rem 1.5rem;
+   padding-bottom: 2rem;
+}
+
+.news-section > div.first-text > P{
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: 400;
+   font-size: 17px;
+   text-transform: uppercase;
+   padding: 1.5rem 0;
+   color: #222;
+}
+
+.news-section > div.first-text > h3{
+   color: #333;
+   font-size: 25px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   line-height: 20px;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+.news-section > div.first-image > img{
+   width: 100%;
+}
+
+.news-section > div.second-text > p{
+   padding: 2rem 0;
+   font-size: 19px;
+   color: #444;
+   word-spacing: 2px;
+   text-align: left;
+   font-family: 'Times New Roman', Times, serif;
+   padding-right: 2rem;
+}
+
+.news-section > div.second-text > p.second-text-p{
+   color: red;
+   text-transform: capitalize;
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: 600;
+   font-size: 21px;
+   width: fit-content;
+   padding: 0;
+}
+
+.news-section > div.second-text > p.second-text-p:hover{
+   color: rgb(243, 58, 58);
+   transition: ease 0.5s;
+   cursor: pointer;
+}
+
+
+/* team section */
+.properties-team{
+   height: 30vh;
+   position: relative;
+   text-align: center;
+   background-image: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(14,30,49,0.9) 0%), url('https://96interior.com.sg/wp-content/uploads/2022/08/image1-3.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.properties-team > div{
+   position: absolute;
+   top: 20%;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.properties-team > div > h3{
+   padding: 1rem 0;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: 100;
+   font-size: 20px;
+   text-transform: uppercase;
+   color: white;
+   word-spacing: 3px;
+   letter-spacing: 3px;
+}
+
+.properties-team > div > h1{
+   padding: 1rem 0;
+   color: white;
+   font-size: 35px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   line-height: 20px;
+   font-weight: 600;
+   text-transform: uppercase;
+}
+
+#team{
+   height: auto;
+   margin-top: 6rem;
+   margin-bottom: 9rem;
+}
+
+.team{
+   width: 100%;
+   padding: 1rem 5rem;
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: space-around;
+}
+
+.team-names{
+   width:25%;
+   padding: 1rem 1rem;
+   box-shadow: 1px 2px 7px 2px #f1efef, -1px -1px 7px 2px #f1efef;
+}
+
+.team-names > h3{
+   font-size: 27px;
+   color: #444;
+   font-family: serif;
+   padding: 0.4rem 0;
+}
+
+.team-names > p.first-p{
+   font-size: 15px;
+   font-weight: 100;
+   color: #333;
+   padding: 0.2rem 0;
+}
+
+.team-names > img{
+   width: 100%;
+   padding: 0.4rem 0;
+}
+
+.team-names > p.second-p{
+   font-size: 20px;
+   color: #333;
+   padding: 0.4rem 0;
+}
+
+.team-names > p.second-p > a{
+   color: #333;
+   text-decoration: none;
+}
+
+.team-names > div{
+   display: flex;
+   justify-content: space-between;
+   padding: 0.4rem 0;
+}
+
+.team-names > div > p{
+   font-size: 20px;
+   color: #333;
+}
+
+.team-names > div > p > a{
+   color: red;
+   text-decoration: none;
+}
+
+/* contact-section */
+.properties-contact{
+   height: 30vh;
+   position: relative;
+   text-align: center;
+   background-image: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(14,30,49,0.9) 0%), url('https://images.squarespace-cdn.com/content/v1/54c59c1de4b01cdc72d563d3/1475978042036-E52IKFPIMM3B4P5YCC3P/11880360_987329687955842_6123582215273893922_n.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.properties-contact > div{
+   position: absolute;
+   top: 20%;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.properties-contact > div > h3{
+   padding: 1rem 0;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: 100;
+   font-size: 20px;
+   text-transform: uppercase;
+   color: white;
+   word-spacing: 3px;
+   letter-spacing: 3px;
+}
+
+.properties-contact > div > h1{
+   padding: 1rem 0;
+   color: white;
+   font-size: 35px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   line-height: 20px;
+   font-weight: 600;
+   text-transform: uppercase;
+}
+
+#office{
+   height: auto;
+   margin-top: 3rem;
+   margin-bottom: 4rem;
+   display: block;
+}
+
+#office > div{
+   padding: 2rem 0;
+   text-align: center;
+   margin-bottom: 4rem;
+}
+
+.office-text{
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: space-around;
+}
+
+.office-text > h2{
+   color: #333;
+   font-size: 25px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   line-height: 20px;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+.office-text > p{
+   font-size: 18px;
+   font-weight: 100;
+   color: #333;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, 
+}
+
+.office-text > p > a{
+   text-decoration: none;
+   font-size: 18px;
+   font-weight: 100;
+   color: black;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, 
+}
+
+.office-text2 > h2{
+   text-transform: uppercase;
+   padding: 1rem 1rem;
+   color: #333;
+   font-weight: 700;
+}
+
+.office-text2 > p{
+   padding: 1rem 23rem;
+   font-size: 18px;
+   font-weight: 100;
+   color: #333;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana,
+}
+
+
+/* styling each of the house */
+#house{
+   height: auto;
+   padding-top: 3rem;
+   margin-bottom: 9rem;
+}
+
+.house{
+   text-align: left;
+   padding: 0 12rem;
+}
+
+.house1{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.house1 > div > h2{
+   font-size: 35px;
+   word-spacing: 1.5px;
+   padding: 1rem 0;
+   font-weight: 600;
+}
+
+.house1 > div > p.price{
+   color: red;
+   font-size: 20px;
+   font-weight: 700;
+   padding: 1rem 0;
+}
+
+.house1 > div > p{
+   font-size: 20px;
+   color: #444;
+   font-size: 22px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   text-transform: uppercase;
+   font-weight: 400;
+}
+
+.house > div > img{
+   width: 100%;
+}
+
+.house2{
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+}
+
+.team-name{
+   width:33%;
+   background-color: rgb(228,236,242);
+   padding: 1rem 1rem;
+   height: 100%;
+}
+
+.team-name > h3{
+   font-size: 27px;
+   color: #444;
+   font-family: serif;
+   padding: 0.4rem 0;
+}
+
+.team-name > p.first-p{
+   font-size: 15px;
+   font-weight: 100;
+   color: #333;
+   padding: 0.2rem 0;
+}
+
+.team-name > img{
+   width: 100%;
+   padding: 2rem 0;
+}
+
+.team-name > p.second-p{
+   font-size: 20px;
+   color: #333;
+   padding: 0.4rem 0;
+}
+
+.team-name > p.second-p > a{
+   color: #333;
+   text-decoration: none;
+}
+
+.team-name > div{
+   display: flex;
+   justify-content: space-between;
+   padding: 0.4rem 0;
+}
+
+.team-name > div > p{
+   font-size: 20px;
+   color: #333;
+}
+
+.house2{
+   margin-top: 4rem;
+}
+
+.house2 > div.text{
+   width: 55%;
+}
+
+.house2 > div.text > div > h4{
+   font-size: 22px;
+   text-transform: capitalize;
+   color: #333;
+   font-weight: 900;
+   padding: 1.3rem 0;
+}
+
+.house2 > div.text > div > p.p-text{
+   color: #444;
+   font-size: 18px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   padding: 1rem 0;
+   font-weight: 400;
+}
+
+.icons{
+   margin-top: 4rem;
+   display: grid;
+   grid-template-columns: auto auto auto;
+   gap: 20px 80px;
+}
+
+.icons > div{
+   padding: 2rem 0;
+}
+
+.icons > div > i{
+   font-size: 35px;
+   color: rgb(195, 195, 199);
+   padding: 0.8rem 0;
+}
+
+.icons > div > i.fa-thin {
+   font-size: 55px;
+   color: rgb(205, 205, 214);
+}
+
+.icons > div > p{
+   font-size: 20px;
+   text-transform: capitalize;
+   color: #333;
+   padding: 0.5rem 0;
+}
+
+.house3{
+   margin-top: 4rem;
+}
+
+.house3 > h3{
+   font-size: 23px;
+   padding: 1rem 0;
+   text-transform: capitalize;
+}
+
+.form{
+   padding: 1rem 0;
+}
+
+input.form[type = "text"]{
+   padding: 0.8rem 0.5rem;
+   width: 250px;
+   border: transparent;
+   border-bottom: 2px solid rgb(174, 185, 250);
+   margin-right: 20px;
+}
+
+input.form[type = "number"]{
+   padding: 0.8rem 0.5rem;
+   width: 250px;
+   border: transparent;
+   border-bottom: 2px solid rgb(174, 185, 250);
+}
+
+input.form[type = "email"]{
+   padding: 0.8rem 0.5rem;
+   width: 100%px;
+   border: transparent;
+   border-bottom: 2px solid rgb(174, 185, 250);
+}
+
+
+
+/* media queries */
+@media screen and (max-width: 1024px){
+/* 
+   *{
+      border: 1px solid red;
+   }
+    */
+   /* Index pade first section */
+
+   .navigation-head{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: rgba(234, 234, 241, 0.97);
+      z-index: 1000;
+      width: 100%;
+      position: sticky;
+      top: 0;
+      /* box-shadow: 2px 2px 10px 2px rgb(194, 193, 193); */
+   }
+   
+   .navigation-body{
+      background-image:  linear-gradient(to bottom, rgba(17,16,22,0.2), rgba(17,16,22,0.8)), url('https://www.freshpalace.com/wp-content/uploads/2013/04/Home-Buenos-Aires-Entrance-Garage-Driveway.jpg');
+      height: 100vh;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+   }
+   
+   .navigation-body > div{
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      transform: translate(-50%);
+      text-align: center;
+   }
+   
+   .navigation-body > div > h1{
+      font-size: 80px;
+      word-spacing: 1px;
+      padding: 2rem 0;
+      color: white;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   }
+   
+   .navigation-body > div > h3{
+      color: rgba(234, 234, 241, 0.8);
+      font-size: 20px;
+      word-spacing: 10px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   
+   .explore{
+      display: flex;
+      justify-content: center;
+      margin-top: 6.5rem;
+   }
+   
+   
+
+
+   /* index page second section */
+   
+   
+   .second-section-img{
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+   }
+   
+   .second-img{
+      position: relative;
+      width:40%;
+   }
+   
+   .second-img > img{
+      width: 100%;
+   }
+   
+   .second-img-buy{
+      background-color: rgba(17, 17, 59, 0.6);
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 98%;
+   }
+   
+   .second-img-buy > h2 > a{
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%);
+      font-size: 70px;
+      text-transform: uppercase;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      text-decoration: none;
+   }
+   
+   .second-img-buy > h2 > a:hover{
+      transition: ease 0.7s;
+      color: red;
+   }
+   
+   .second-img-buy2{
+      background-color: rgba(241, 50, 50, 0.6);
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 98%;
+   }
+   
+   .second-img-buy2 > h2 > a{
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%);
+      font-size: 70px;
+      text-transform: uppercase;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      text-decoration: none;
+   }
+   
+   .second-img-buy2 > h2 > a:hover{
+      transition: ease 0.7s;
+      color: red;
+   }
+
+
+   /* index page third section */
+   #third-section{
+      /* border: 1px solid red; */
+      margin-top: 4rem;
+      text-align: center;
+   
+   }
+   
+   .overall{
+      /* border: 1px solid rebeccapurple; */
+      height: auto;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      justify-items: center;
+      padding: 5rem 5rem;
+      align-items: center;
+   }
+   
+
+   /* index page stories section */
+   #stories{
+      margin-top: 7rem;
+      text-align: center;
+      height: 130vh;
+   }
+   
+   #stories > h3{
+      color: #444;
+      font-size: 22px;
+      word-spacing: 10px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 1rem 1rem;
+      text-transform: uppercase;
+      font-weight: 400;
+      margin-bottom: 2rem;
+   }
+   
+   .stories{
+      display: block;
+      position: relative;
+   }
+   
+   .stories-text{
+      display: flex;
+      justify-content: center;
+   }
+   
+   .stories-text > div{
+      background-color: rgb(9,29,53);
+      height: 50vh;
+      width: 80%;
+      position: relative;
+      z-index: 10;
+   }
+   
+   .stories-text > div > i{
+      color: white;
+      font-size: 20px;
+   }
+   
+   .stories-text > div > i#first-icon{
+      position: absolute;
+      left: 90px;
+      bottom: 50%;
+   }
+   
+   .stories-text > div > i#second-icon{
+      position: absolute;
+      right: 90px;
+      bottom: 50%;
+   }
+   
+   .stories-text > div > div{
+      padding: 6rem 10rem;
+   }
+   
+   .stories-text > div > div > p{
+      color: white;
+      font-size: 20px;
+   }
+   
+   .stories-text > div > div > h3{
+      color: rgb(230, 64, 64);
+      font-size: 23px;
+      font-weight: 900;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+   
+   
+   .stories-img{
+      height: 85vh;
+      position: absolute;
+      width: 100%;
+      top: 250px;
+      background-image: url('https://maricamckeel.com/wp-content/uploads/2017/11/06a_East-House.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+   }
+
+      /* contact section */
+   #contact{
+      background-color:rgb(29,45,66);
+      height: 125vh;
+   }
+
+   .contact{
+      height: inherit;
+      display: flex;
+      flex-wrap: nowrap;
+   }
+
+   .contact-div1{
+      /* border: 1px solid red; */
+      width: 44%;
+      padding: 0 3rem;
+   }
+
+   .contact-div1 > h3{
+      font-size: 27px;
+      font-weight: 100;
+      color: white;
+      text-transform: capitalize;
+      padding: 4rem 0;
+      font-family: 'Courier New', Courier, monospace;
+   }
+
+   .contact-div1 > p{
+      color: white;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 20px;
+      padding: 1rem 0;
+      padding-right: 6rem;
+   }
+
+   .contact-div2{
+      width: 54%;
+      /* border: 1px solid red; */
+   }
+
+   .contact-div2 h3{
+      font-size: 27px;
+      font-weight: 100;
+      color: white;
+      text-transform: capitalize;
+      padding: 4rem 0;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   }
+
+   .contact-div2 form{
+      border: 1px solid transparent;
+   }
+
+   .contact-div2 form > div.second-div{
+      display: flex;
+      padding: 1rem 0;
+   }
+
+   .contact-div2 form > div.first-div{
+      padding: 1rem 0;
+   }
+
+   .contact-div2 form > div.first-div > p{
+      color: white;
+      font-size: 20px;
+      text-transform: capitalize;
+   }
+
+   .first-div > p > label{
+      padding-right: 3rem;
+   }
+
+   .last-name{
+      padding: 1rem 3rem;
+   }
+
+   .first-name{
+      padding: 1rem 0;
+   }
+
+   label{
+      color: white;
+      font-size: 18px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   }
+
+   input[type = "text"]{
+      padding: 0.7rem 1rem;
+      width: 100%;
+      background-color: transparent;
+      border: 1px solid transparent;
+      border-bottom: 2px solid white;
+   }
+
+   input[type = "email"]{
+      padding: 0.7rem 1rem;
+      width: 72%;
+      background-color: transparent;
+      border: 1px solid transparent;
+      border-bottom: 2px solid white;
+   }
+
+   input[type = "radio"]{
+      background-color: black;
+   }
+
+   textarea{
+      padding: 0.1rem 1rem;
+      width: 72%;
+      background-color: transparent;
+      border: 1px solid transparent;
+      border-bottom: 2px solid white;
+   }
+
+   input[type = "submit"]{
+      border: transparent;
+      margin-top: 0.5rem;
+      padding: 0.7rem 1rem;
+      background-color: rgb(226, 27, 27);
+      text-transform: uppercase;
+      color: white;
+      transition: ease 0.2s;
+      font-weight: 600;
+      font-family: 'Courier New', Courier, monospace;
+   }
+
+   input[type = "submit"]:hover{
+      background-color: rgb(231, 73, 73);
+      cursor: pointer;
+   }
+
+
+   /* footer section */
+   #footer{
+      background-color: rgb(9,29,53);
+      height: auto;
+   }
+
+   .footer{
+      height: auto;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+   }
+
+   .footer > div{
+      padding-top: 4rem;
+   }
+
+   .footer > div > div{
+      padding: 1rem 3rem;
+      margin-bottom: 5rem;
+   }
+
+  
+
+   /* news page */
+   
+   .news{
+      /* border: 1px solid red; */
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 16rem;
+      margin-bottom: 2rem;
+   }
+
+   /* team page */
+   #team{
+      height: auto;
+      margin-top: 6rem;
+      margin-bottom: 9rem;
+   }
+   
+   .team{
+      width: 100%;
+      padding: 1rem 2rem;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+   }
+   
+   .team-names > h3{
+      font-size: 23px;
+      color: #444;
+      font-family: serif;
+      padding: 0.4rem 0;
+   }
+   
+   .team-names > p.second-p{
+      font-size: 19px;
+      color: #333;
+      padding: 0.4rem 0;
+   }
+   
+   .team-names > p.second-p > a{
+      color: #333;
+      text-decoration: none;
+   }
+   
+   .team-names > div{
+      display: flex;
+      justify-content: space-between;
+      padding: 0.4rem 0;
+   }
+   
+   .team-names > div > p{
+      font-size: 18px;
+      color: #333;
+   }
+
+   
+   /* contact page */
+   .office-text2 > p{
+      padding: 1rem 18rem;
+      font-size: 18px;
+      font-weight: 100;
+      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana,
+   }
+
+
+   /* the different houses */
+   .house{
+      text-align: left;
+      padding: 0 8rem;
+   }
+
+   .form{
+      padding: 1rem 0;
+      width: 100%;
+   }
+   
+   input.form[type = "text"]{
+      padding: 0.8rem 0.5rem;
+      margin-bottom: 2rem;
+      width: 210px;
+      border: transparent;
+      border-bottom: 2px solid rgb(174, 185, 250);
+      margin-right: 20px;
+   }
+   
+   input.form[type = "number"]{
+      padding: 0.8rem 0.5rem;
+      width: 210px;
+      border: transparent;
+      border-bottom: 2px solid rgb(174, 185, 250);
+   }
+   
+   input.form[type = "email"]{
+      padding: 0.8rem 0.5rem;
+      width: 80%;
+      border: transparent;
+      border-bottom: 2px solid rgb(174, 185, 250);
+   }
+   
+}
+
+
+@media screen and (min-width: 768px){
+
+}
+
+
+@media screen and (max-width: 576px){
+
+   /* home section of the website */
+
+   /* first part */
+   .navigation-head{
+      /* border: 1px solid red; */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(234, 234, 241, 0.97);
+      z-index: 1000;
+      position: sticky;
+      top: 0;
+      /* box-shadow: 2px 2px 10px 2px rgb(194, 193, 193); */
+   }
+   .social-media{
+      /* border: 1px solid rebeccapurple; */
+      padding: 1rem 1rem;
+      align-items: center;
+      display: none;
+   }
+   
+   .nav-links{
+      display: none;
+   }
+  
+   .toggle{
+      display: block;
+      padding: 0 1rem;
+      font-size: 35px;
+      color: rgb(114, 3, 3);
+   }
+   
+   .navigation-body{
+      background-image:  linear-gradient(to bottom, rgba(17,16,22,0.2), rgba(17,16,22,0.8)), url('https://www.freshpalace.com/wp-content/uploads/2013/04/Home-Buenos-Aires-Entrance-Garage-Driveway.jpg');
+      height: 90vh;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+   }
+   
+   .navigation-body > div{
+      position: absolute;
+      top: 13%;
+      left: 50%;
+      transform: translate(-50%);
+      text-align: center;
+   }
+   
+   .navigation-body > div > h1{
+      font-size: 80px;
+      padding: 2rem 0;
+      color: white;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   }
+
+   
+   .explore{
+      display: flex;
+      justify-content: center;
+      margin-top: 4rem;
+   }
+
+   /* second part */
+   .second-section-img{
+      display: grid;
+      grid-template-columns: auto;
+      place-items: center;
+      row-gap: 0;
+   }
+   
+   .second-img{
+      position: relative;
+      width:60%;
+   }
+   
+   .second-img-buy{
+      background-color: rgba(17, 17, 59, 0.6);
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+   }
+   
+   .second-img-buy > h2 > a{
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%);
+      font-size: 50px;
+      text-transform: uppercase;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      text-decoration: none;
+   }
+   
+   .second-img-buy2 > h2 > a{
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%);
+      font-size: 50px;
+      text-transform: uppercase;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      text-decoration: none;
+   }
+
+
+   /* third part */
+   #third-section{
+      /* border: 1px solid red; */
+      margin-top: 4rem;
+      text-align: center;
+   
+   }
+   
+   .overall{
+      /* border: 1px solid rebeccapurple; */
+      height: auto;
+      display: grid;
+      grid-template-columns: auto;
+      place-items: center;
+      padding: 5rem 0;
+   }
+
+   .overall-div{
+      /* border: 1px solid yellow; */
+      width: 80%;
+      box-shadow: 1px 2px 7px 2px #e4e0e0, -1px -1px 7px 2px #e4e0e0;
+      margin-top: 3rem;
+      padding-bottom: 2rem;
+   }
+
+
+   /* stories part */
+   #stories{
+      margin-top: 8rem;
+      text-align: center;
+      height: 120vh;
+   }
+   
+   #stories > h3{
+      color: #444;
+      font-size: 25px;
+      word-spacing: 10px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 1rem 1rem;
+      text-transform: uppercase;
+      font-weight: 200;
+      margin-bottom: 2rem;
+   }
+   
+   .stories{
+      display: block;
+      position: relative;
+   }
+   
+   .stories-text{
+      display: flex;
+      justify-content: center;
+   }
+   
+   .stories-text > div{
+      background-color: rgb(9,29,53);
+      height: 40vh;
+      width: 85%;
+      position: relative;
+      z-index: 10;
+   }
+   
+   .stories-text > div > i{
+      color: white;
+      font-size: 20px;
+   }
+   
+   .stories-text > div > i#first-icon{
+      position: absolute;
+      left: 30px;
+      bottom: 50%;
+   }
+   
+   .stories-text > div > i#second-icon{
+      position: absolute;
+      right: 30px;
+      bottom: 50%;
+   }
+   
+   .stories-text > div > div{
+      padding: 4rem 7rem;
+   }
+   
+   .stories-text > div > div > p{
+      color: white;
+      font-size: 16px;
+   }
+   
+   .stories-text > div > div > h3{
+      color: rgb(230, 64, 64);
+      font-size: 19px;
+      font-weight: 900;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+   
+   
+   .stories-img{
+      height: 85vh;
+      position: absolute;
+      width: 100%;
+      top: 190px;
+      background-image: url('https://maricamckeel.com/wp-content/uploads/2017/11/06a_East-House.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+   }
+
+
+   /* welcome section */
+   #welcome{
+      background-color:rgb(228,236,242);
+      text-align: center;
+      padding: 6rem 6rem;
+      height: auto;
+   }
+
+   
+   .welcome{
+      display: grid;
+      grid-template-columns: auto;
+      place-items: center;
+      padding: 4rem 0;
+   }
+
+   .welcome-div > i{
+      font-size: 45px;
+      color: rgb(179, 20, 20);
+      padding: 0.3rem 0.3rem;
+   }
+
+   .welcome-div > h2{
+      font-size: 23px;
+      font-weight: 700;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #222;
+      text-transform: capitalize;
+      padding: 1rem 0.3rem;
+   }
+
+   .welcome-div > p{
+      font-size: 19px;
+      text-transform: capitalize;
+      padding: 0.3rem 0;
+      font-weight: 200;
+      color: #444;
+   }
+
+
+   /* contact section */
+   #contact{
+      background-color:rgb(29,45,66);
+      height: auto;
+      padding-bottom: 3rem;
+   }
+
+   .contact{
+      height: inherit;
+      display: grid;
+      grid-template-columns: auto;
+      place-items: center;
+   }
+
+   .contact-div1{
+      /* border: 1px solid red; */
+      width: 100%;
+      padding: 0 3rem;
+   }
+
+
+   .contact-div2{
+      width: 100%;
+      padding: 0 3rem;
+      /* border: 1px solid red; */
+   }
+
+   .contact-div2 form{
+      border: 1px solid transparent;
+   }
+
+   .contact-div2 form > div.second-div{
+      display: grid;
+      grid-template-columns: auto;
+      padding: 1rem 0;
+   }
+
+   .contact-div2 form > div.first-div{
+      padding: 1rem 0;
+   }
+
+   .contact-div2 form > div.first-div > p{
+      color: white;
+      margin-top: 2rem;
+      font-size: 17px;
+      text-transform: capitalize;
+   }
+
+   .first-div > p > label{
+      padding-right: 3rem;
+   }
+
+   .last-name{
+      padding: 1rem 0;
+   }
+
+   .first-name{
+      padding: 1rem 0;
+   }
+
+   label{
+      color: white;
+      font-size: 18px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   }
+
+   input[type = "text"]{
+      padding: 0.7rem 1rem;
+      background-color: transparent;
+      border: 1px solid transparent;
+      border-bottom: 2px solid white;
+      width: 85%;
+   }
+
+   input[type = "email"]{
+      padding: 0.7rem 1rem;
+      width: 85%;
+      background-color: transparent;
+      border: 1px solid transparent;
+      border-bottom: 2px solid white;
+   }
+
+   input[type = "radio"]{
+      background-color: black;
+   }
+
+   textarea{
+      padding: 0.1rem 2rem;
+      width: 72%;
+      background-color: transparent;
+      border: 1px solid transparent;
+      border-bottom: 2px solid white;
+   }
+
+   input[type = "submit"]{
+      border: transparent;
+      margin-top: 0.5rem;
+      padding: 0.7rem 1rem;
+      background-color: rgb(226, 27, 27);
+      text-transform: uppercase;
+      color: white;
+      transition: ease 0.2s;
+      font-weight: 600;
+      font-family: 'Courier New', Courier, monospace;
+   }
+
+   input[type = "submit"]:hover{
+      background-color: rgb(231, 73, 73);
+      cursor: pointer;
+   }
+
+
+   /* footer section */
+   #footer{
+      background-color: rgb(9,29,53);
+      height: auto;
+   }
+
+   .footer{
+      height: auto;
+      display: grid;
+      grid-template-columns: auto;
+      place-items: center;
+   }
+
+   .footer-logo{
+      padding: 0 7rem;
+   }
+   .footer > div{
+      padding-top: 4rem;
+      text-align: center;
+   }
+
+   .footer > div > div{
+      padding: 1rem 1rem;
+      margin-bottom: 5rem;
+   }
+
+   .footer > div > div > p{
+      color: rgb(114, 3, 3);
+      font-weight: 800;
+   }
+
+   .footer > div > p.copy{
+      color: white;
+      font-weight: 600;
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      padding: 1rem 1rem;
+   }
+
+   .footer > div > p.copy > a{
+      color: rgb(114, 3, 3);
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 18px;
+   }
+
+   .footer > div > ul{
+      display: block;
+   }
+
+   .footer > div li{
+      display: block;
+      padding: 1rem 1rem;
+   }
+
+   .footer > div li > a{
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 13px;
+   }
+
+   .footer-special > p{
+      color: white;
+      padding: 1rem 0;
+      font-size: 20px;
+   }
+
+   .footer-special > p > a{
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+   }
+
+   .footer-special > div{
+      margin-top: 6rem;
+   }
+
+   .footer-special > div >a{
+      color: white;
+   }
+
+   .footer-special > div > a > i{
+      padding-right: 0.3rem;
+   }
+
+   
+}
+
+@media screen and (max-width: 369px){
+   
+   /* *{
+      border: 1px solid red;
+   } */
+   
+   /* index page of the website */
+   .navigation-head{
+      /* border: 1px solid red; */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(234, 234, 241, 0.97);
+      z-index: 1000;
+      position: sticky;
+      top: 0;
+   }
+   
+   .logo{
+      border-bottom: 5px solid rgb(236, 105, 105);
+      text-align: center;
+      padding: 0.3rem 1rem;
+   }
+  
+   .toggle{
+      display: block;
+      padding: 1rem 1rem;
+   }
+   
+   
+   
+   .navigation-body{
+      background-image:  linear-gradient(to bottom, rgba(17,16,22,0.2), rgba(17,16,22,0.8)), url('https://www.freshpalace.com/wp-content/uploads/2013/04/Home-Buenos-Aires-Entrance-Garage-Driveway.jpg');
+      height: 80vh;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+   }
+   
+   .navigation-body > div{
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%);
+      text-align: center;
+   }
+   
+   .navigation-body > div > h1{
+      font-size: 60px;
+      word-spacing: 1.5px;
+      padding: 1rem 1rem;
+      color: white;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   }
+   
+   .navigation-body > div > h3{
+      color: rgba(234, 234, 241, 0.8);
+      font-size: 15px;
+      word-spacing: 10px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   
+   .explore{
+      display: flex;
+      justify-content: center;
+      margin-top: 5rem;
+   }
+
+    /* second part */
+    #second-section > div >h3{
+      color: #444;
+      font-size: 18px;
+      word-spacing: 5px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 1rem 1rem;
+      text-transform: uppercase;
+      font-weight: 400;
+   }
+
+    .second-section-img{
+      display: grid;
+      grid-template-columns: auto;
+      place-items: center;
+      row-gap: 0;
+   }
+   
+   .second-img{
+      position: relative;
+      width:80%;
+   }
+
+   /* third part */
+   #third-section{
+      /* border: 1px solid red; */
+      margin-top: 4rem;
+      text-align: center;
+   
+   }
+   
+   .overall{
+      /* border: 1px solid rebeccapurple; */
+      height: auto;
+      display: grid;
+      grid-template-columns: auto;
+      place-items: center;
+      padding: 5rem 0;
+   }
+
+   .overall-div{
+      /* border: 1px solid yellow; */
+      width: 80%;
+      box-shadow: 1px 2px 7px 2px #e4e0e0, -1px -1px 7px 2px #e4e0e0;
+      margin-top: 0.5rem;
+      padding-bottom: 2rem;
+   }
+
+   hr{
+      height: 2px;
+      width: 100%;
+      margin: 0 ;
+      background-color: rgb(247, 238, 238);
+      border: none;
+   }
+
+
+   
+   /* stories part */
+   
+   .stories-text > div{
+      background-color: rgb(9,29,53);
+      height: 40vh;
+      width: 100%;
+      position: relative;
+      z-index: 10;
+   }
+   
+   .stories-text > div > i{
+      color: white;
+      font-size: 15px;
+   }
+   
+   .stories-text > div > i#first-icon{
+      position: absolute;
+      left: 15px;
+      bottom: 50%;
+   }
+   
+   .stories-text > div > i#second-icon{
+      position: absolute;
+      right: 15px;
+      bottom: 50%;
+   }
+   
+   .stories-text > div > div{
+      padding: 3rem 4rem;
+   }
+   
+   .stories-text > div > div > p{
+      color: white;
+      font-size: 16px;
+   }
+
+
+   /* welcome section */
+
+   #welcome{
+      background-color:rgb(228,236,242);
+      text-align: center;
+      padding: 6rem 2rem;
+      height: auto;
+   }
+
+   #welcome > h3{
+      color: #444;
+      font-size: 22px;
+      word-spacing: 2px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 1rem 0;
+      text-transform: uppercase;
+      font-weight: 200;
+   }
+
+   .welcome-div > i{
+      font-size: 40px;
+      color: rgb(179, 20, 20);
+      padding: 0.3rem 0.3rem;
+   }
+
+   .welcome-div > h2{
+      font-size: 19px;
+      font-weight: 700;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #222;
+      text-transform: capitalize;
+      padding: 1rem 0;
+   }
+
+   .welcome-div > p{
+      font-size: 18px;
+      text-transform: capitalize;
+      padding: 0.3rem 0;
+      font-weight: 200;
+      color: #444;
+   }
+
+
+   /* contact section */
+   #contact{
+      background-color:rgb(29,45,66);
+      height: auto;
+   }
+   
+   .contact{
+      height: inherit;
+      display: grid;
+      grid-template-columns: auto;
+      place-items: center;
+   }
+   
+   .contact-div1{
+      /* border: 1px solid red; */
+      width: 100%;
+      padding: 0 1.5rem;
+   }
+   
+   .contact-div1 > h3{
+      font-size: 27px;
+      font-weight: 100;
+      color: white;
+      text-transform: capitalize;
+      padding: 3rem 0;
+      font-family: 'Courier New', Courier, monospace;
+   }
+   
+   .contact-div1 > p{
+      color: white;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 18px;
+      padding: 1rem 0;
+      padding-right: 2rem;
+   }
+   
+   .contact-div2{
+      width: 100%;
+      padding: 0 1.5rem;
+      /* border: 1px solid red; */
+   }
+   
+   .contact-div2 h3{
+      font-size: 27px;
+      font-weight: 100;
+      color: white;
+      text-transform: capitalize;
+      padding: 3rem 0;
+      font-family: 'Courier New', Courier, monospace;
+   }
+   
+   .contact-div2 form{
+      border: 1px solid transparent;
+   }
+   
+   .contact-div2 form > div.second-div{
+      display: block;
+      padding: 1rem 0;
+   }
+   
+   .contact-div2 form > div.first-div{
+      padding: 1rem 0;
+   }
+   
+   .contact-div2 form > div.first-div > p{
+      color: white;
+      font-size: 20px;
+      text-transform: capitalize;
+   }
+   
+   .first-div > p > label{
+      padding-right: 3rem;
+   }
+   
+   .last-name{
+      padding: 1rem 0;
+   }
+   
+   .first-name{
+      padding: 1rem 0;
+   }
+   
+   label{
+      color: white;
+      font-size: 18px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   }
+   
+   input[type = "text"]{
+      padding: 0.7rem 1rem;
+      width: 100%;
+      background-color: transparent;
+      border: 1px solid transparent;
+      border-bottom: 2px solid white;
+   }
+   
+   input[type = "email"]{
+      padding: 0.7rem 1rem;
+      width: 100%;
+      background-color: transparent;
+      border: 1px solid transparent;
+      border-bottom: 2px solid white;
+   }
+   
+   input[type = "radio"]{
+      background-color: black;
+
+   }
+   
+   textarea{
+      padding: 0.1rem 2rem;
+      width: 100%;
+      background-color: transparent;
+      border: 1px solid transparent;
+      border-bottom: 2px solid white;
+   }
+   
+   input[type = "submit"]{
+      border: transparent;
+      margin-top: 0.5rem;
+      padding: 0.7rem 1rem;
+      background-color: rgb(226, 27, 27);
+      text-transform: uppercase;
+      color: white;
+      transition: ease 0.2s;
+      font-weight: 600;
+      font-family: 'Courier New', Courier, monospace;
+   }
+   
+   input[type = "submit"]:hover{
+      background-color: rgb(231, 73, 73);
+      cursor: pointer;
+   }
+   
+  
+
+   /* footer section */
+   #footer{
+      background-color: rgb(9,29,53);
+      height: auto;
+   }
+
+   .footer{
+      height: auto;
+      display: grid;
+      grid-template-columns: auto;
+      place-items: center;
+   }
+
+   .footer-logo{
+      padding: 0 1rem;
+   }
+   .footer > div{
+      padding-top: 4rem;
+      text-align: center;
+   }
+
+   .footer > div > div{
+      padding: 0 1rem;
+      margin-bottom: 2rem;
+   }
+
+   .footer > div > div > p{
+      color: rgb(114, 3, 3);
+      font-weight: 800;
+   }
+
+   .footer > div > p.copy{
+      color: white;
+      font-weight: 600;
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      padding: 1rem 1rem;
+   }
+
+   .footer > div > p.copy > a{
+      color: rgb(114, 3, 3);
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 18px;
+   }
+
+   .footer > div > ul{
+      display: block;
+   }
+
+   .footer > div li{
+      display: block;
+      padding: 1rem 1rem;
+   }
+
+   .footer > div li > a{
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 13px;
+   }
+
+   .footer-special > p{
+      color: white;
+      padding: 1rem 0;
+      font-size: 18px;
+   }
+
+   .footer-special > p > a{
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+   }
+
+   .footer-special > div{
+      margin-top: 2rem;
+   }
+
+   .footer-special > div >a{
+      color: white;
+      padding: 0 1rem;
+   }
+
+   .footer-special > div > a > i{
+      padding-right: 0.3rem;
+   }
+
+
+
+}
